@@ -39,6 +39,8 @@ main {
 }
 #events, #membership, #resources {
     text-align: center;
+    margin-top: 60px;
+    
 }
 #events h2 {
     margin-bottom: 30px;
