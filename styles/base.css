@@ -62,9 +62,10 @@ main {
     padding: 20px;
 }
 .cards {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 1rem;
+
+    display: flex;
+    flex-direction: column;
+
 }
 
 h1 {
@@ -74,7 +75,6 @@ h1 {
 .head {
     text-align: center;
     padding-bottom: 20px;
-    background-color: rgb(0, 225, 38);
     margin: 0 auto;
 }
 
@@ -84,6 +84,7 @@ h1 {
     background-color: #f0f0f0;
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 100%;  /* Each card takes full width */
 }
 li {
     font-family:"Poppins", sans-serif; 

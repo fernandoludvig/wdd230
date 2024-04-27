@@ -1,9 +1,16 @@
-/* Larger Views ******************************/
 @media (min-width: 640px) {
-	nav ul {
-		display: flex;
-	}
-	nav ul li {
-		flex: 1 1 100%;
-	}
+    nav ul {
+        display: flex;
+    }
+    nav ul li {
+        flex: 1 1 auto;  /* Adjust to 'auto' for equal distribution */
+    }
+
+    .cards {
+        flex-direction: row;  /* Align cards horizontally */
+    }
+
+    .card-learning-activities, .card-information {
+        flex: 1 1 50%;  /* Each card takes half of the container width */
+    }
 }
