@@ -124,5 +124,8 @@ footer {
     align-items: center;
     font-size: 25px;
  }
+ footer p {
+    margin-top: 5px;
+ }
 
 
