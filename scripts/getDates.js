@@ -22,6 +22,8 @@ hambutton.addEventListener('click', () => {
 });
 
 
+
+
 document.addEventListener("DOMContentLoaded", function() {
     const myBtn = document.querySelector('#darkBtn');
     const main = document.querySelector('main');
