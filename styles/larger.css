@@ -14,3 +14,19 @@
         flex: 1 1 50%;  /* Each card takes half of the container width */
     }
 }
+
+@media (min-width: 40em){
+    .navigation {
+        display: flex;
+    }
+    .navigation li {
+        display: block;
+        flex: 1 1 100%;
+    }
+    .navigation a {
+        text-align: center;
+    }
+    #menu {
+        display: none;
+    }
+}

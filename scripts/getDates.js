@@ -12,3 +12,21 @@ var lastModifiedSpan = document.getElementById("lastModified");
 
 // Get the last modified date of the document and set it to the span element
 lastModifiedSpan.textContent = document.lastModified;
+
+const mainnav = document.querySelector('.navigation')
+const hambutton = document.querySelector('#menu');
+
+hambutton.addEventListener('click', () => {
+    mainnav.classList.toggle('show');
+    hambutton.classList.toggle('show');
+});
+
+
+document.addEventListener("DOMContentLoaded", function() {
+    const myBtn = document.querySelector('#darkBtn');
+    const main = document.querySelector('main');
+
+    myBtn.addEventListener('click', () => {
+        main.classList.toggle('dark');
+    });
+});

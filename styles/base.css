@@ -1,14 +1,16 @@
+/* Reset */
 * {
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
 }
 
+/* Body */
 body {
 	font-family: "Sansita", sans-serif;
 }
 
-/* mobile **************************/
+/* Header */
 header {
 	background-color: #3B6E98;
 	display: flex;
@@ -16,23 +18,93 @@ header {
 	justify-content: center;
 	padding: 20px;
 	border: 1px solid rgba(0, 0, 0, 0.1);
-    font-family:"Poppins", sans-serif; ;
+    font-family: "Poppins", sans-serif;
     font-weight: 700;
     font-size: 2rem;
-    color:white
+    color: white;
+    position: relative;
 }
+
+/* Image */
 img {
     border-radius: 15px;
     margin-right: 20px;
 }
 
+/* Main & Header */
 header,
 main {
 	margin: 0 auto;
 }
 
-h1 {
-	font-size: 2rem;
+/* Dark Mode */
+#darkBtn {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    cursor: pointer;
+    width: 24px;
+}
+
+main.dark {
+    color: white;
+    background-color: #000;
+}
+
+main.dark h2,
+main.dark li,
+main.dark p {
+    color: black;
+}
+
+/* Navigation */
+#menu {
+    display: block;
+    font-size: 2rem;
+    font-weight: 700;
+    text-decoration: none;
+    padding: .5rem .75rem;
+    background-color: #eee;
+    color: #000;
+}
+
+#menu::before {
+    content: "#";
+}
+
+.navigation {
+    list-style: none;
+    margin: 0 auto;
+    max-width: 760px;
+}
+
+.navigation li {
+    display: none;
+}
+
+.navigation a {
+    display: block;
+    padding: 0.75rem;
+    text-align: left;
+    text-decoration: none;
+    color: white;
+    font-weight: 700;
+    transition: 0.5s;
+    font-size: clamp(1rem, 2vmin, 1.5rem);
+}
+
+.navigation a:hover,
+.navigation a:active {
+    color: white;
+    background-color: black;
+}
+
+.show li {
+    display: block;
+}
+
+#menu.show::before {
+    content: "X";
 }
 
 nav {
@@ -40,9 +112,11 @@ nav {
 	margin: 0 auto;
 	max-width: 800px;
 }
+
 nav ul {
 	list-style-type: none;
 }
+
 nav a {
 	display: block;
 	color: #fff;
@@ -52,26 +126,28 @@ nav a {
 }
 
 nav a:hover {
-	text-decoration:underline;
+	text-decoration: underline;
     color: yellow;
-    
 }
+
+/* Main */
 main {
     max-width: 800px;
     margin: 0 auto;
     padding: 20px;
 }
-.cards {
 
+/* Cards */
+.cards {
     display: flex;
     flex-direction: column;
-
 }
 
 h1 {
     font-weight: 800;
     font-size: 1.5rem;
 }
+
 .head {
     text-align: center;
     padding-bottom: 20px;
@@ -86,11 +162,27 @@ h1 {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     width: 100%;  /* Each card takes full width */
 }
+
 li {
-    font-family:"Poppins", sans-serif; 
-    
+    font-family: "Poppins", sans-serif;
 }
 
+.cards h2 {
+    color: #fff; /* Text color */
+    background-color: #3B6E98; /* Background color */
+    padding: 10px; /* Padding */
+    text-align: center; /* Center alignment */
+    margin-bottom: 10px; /* Bottom margin */
+}
+
+/* Card Information */
+.card-information p {
+    text-align: center;
+    padding: 4px;
+    font-family: "Poppins", sans-serif;
+}
+
+/* Footer */
 footer {
     background-color: #3B6E98;
 	display: flex;
@@ -98,34 +190,14 @@ footer {
 	justify-content: center;
 	padding: 60px;
 	border: 1px solid rgba(0, 0, 0, 0.1);
-    font-family:"Poppins", sans-serif; ;
-    font-weight: 700;
-    font-size: 2rem;
-    color:white
-}
-
-.cards h2 {
-    color: #fff; /* Cor do texto */
-    background-color: #3B6E98; /* Cor de fundo */
-    padding: 10px; /* Espaçamento interno */
-    text-align: center; /* Alinhamento centralizado */
-    margin-bottom: 10px; /* Margem inferior */
-}
-
-/* Estilizando os parágrafos dentro de .card-information */
-.card-information p {
-    text-align: center;
-    padding: 4px;
     font-family: "Poppins", sans-serif;
-}
-footer {
-    display: flex; 
-    flex-direction: column; 
-    align-items: center;
+    font-weight: 700;
     font-size: 25px;
- }
- footer p {
+    flex-direction: column; 
+    color: white;
+}
+
+footer p {
     margin-top: 5px;
- }
-
-
+    color: #eee;
+}
