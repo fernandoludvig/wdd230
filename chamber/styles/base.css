@@ -5,22 +5,44 @@
 }
 header {
     background-color: #3B6E98;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	padding: 20px;
-	border: 1px solid rgba(0, 0, 0, 0.1);
-    font-family:"Poppins", sans-serif; ;
+    display: flex;
+    flex-direction: column;  /* Mudança para organizar os filhos em coluna */
+    align-items: center;     /* Centraliza horizontalmente os filhos */
+    justify-content: center; /* Centraliza verticalmente os filhos */
+    padding: 20px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    font-family: 'Poppins', sans-serif;
     font-weight: 700;
     font-size: 2rem;
-    color:white
+    color: white;
+    height: 300px;
 }
+
 header h1 {
     font-family: 'Montserrat', sans-serif;
     color: white;
-} 
+    margin-bottom: 20px; /* Espaço entre o h1 e o botão */
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #ffffff;
+    color: #3B6E98;
+    font-size: 1rem;
+    font-family: 'Montserrat', sans-serif;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+button:hover {
+    background-color: #080809;
+    color: #ffffff;
+}
+
 nav {
-    background-color: rgb(160, 179, 211);
+    background-color: #e0f2ff;
 	margin: 0 auto;
 	max-width: 800px;
 }
@@ -34,40 +56,157 @@ nav a {
 	padding: 1rem;
 	text-decoration: none;
 }
+
+nav a:hover {
+    background-color: #080809;
+    color: #ffffff;
+}
+#menu {
+    display: block;
+    font-size: 2rem;
+    font-weight: 700;
+    text-decoration: none;
+    padding: .5rem .75rem;
+    background-color: #eee;
+    color: #000;
+}
+
+.navigation {
+    list-style: none;
+    margin: 0 auto;
+    max-width: 760px;
+}
+
+.navigation li {
+    display: none;
+}
+
+.navigation a {
+    display: block;
+    padding: 0.75rem;
+    text-align: left;
+    text-decoration: none;
+    color: black;
+    font-weight: 700;
+    transition: 0.5s;
+    font-size: clamp(1rem, 2vmin, 1.5rem);
+}
+
+.navigation a:hover,
+.navigation a:active {
+    color: white;
+    background-color: black;
+}
+
+.show li {
+    display: block;
+}
+
 main {
     margin-top: 60px;
 }
-#events, #membership, #resources {
-    text-align: center;
-    margin-top: 60px;
-    
-}
-#events h2 {
-    margin-bottom: 30px;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 30px;
+.cards-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    gap: 20px; /* Adiciona espaço entre os cards */
 }
 
-.event {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 1rem;
-}
-footer {
-    background-color: #3B6E98;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	padding: 60px;
-	border: 1px solid rgba(0, 0, 0, 0.1);
-    font-family:"Open Sans", sans-serif; ;
-    font-weight: 700;
-    font-size: 2rem;
-    color:white
-}
-.evento {
+.card {
+    flex: 1; /* Faz com que cada card cresça igualmente para preencher o espaço disponível */
     padding: 20px;
-    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+}
+
+.card h2 {
+    text-align: center;
+    padding-bottom: 12px;
+}
+
+#weather {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.weather-info {
+    display: flex;
+    align-items: center;
+}
+
+.text-info {
+    text-align: center;
+    margin-right: 20px; /* Espaço entre o texto e a imagem */
+}
+
+#weather-icon {
+    width: 50px; /* Adjust according to your layout */
+    height: 50px; /* Adjust according to your layout */
+    /* Add any additional styles as needed */
+}
+
+
+#spotlights {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Grid responsivo com largura mínima de 300px */
+    gap: 20px; /* Espaçamento entre os cartões */
+}
+
+.spotlight {
+    background-color: #fffafa;
+    padding: 20px;
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.spotlight h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.spotlight p {
+    margin-bottom: 15px;
+}
+
+.spotlight img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 15px;
+}
+
+.spotlight a {
+    display: inline-block;
+    background-color: #3B6E98;
+    color: #fffafa;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.spotlight a:hover {
+    background-color: #080809;
+}
+
+
+footer {
+    background-color: #3B6E98;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 60px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-size: 25px;
+    flex-direction: column; 
+    color: #fffafa;
+    margin-top: 30px;
+}
+
+footer p {
+    margin-top: 5px;
+    color: #fffafa; /* Adjust the text color for better contrast */
 }

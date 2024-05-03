@@ -8,3 +8,26 @@
 		flex: 1 1 100%;
 	}
 }
+
+@media (min-width: 40em){
+    .navigation {
+        display: flex;
+    }
+    .navigation li {
+        display: block;
+        flex: 1 1 100%;
+    }
+    .navigation a {
+        text-align: center;
+    }
+    #menu {
+        display: none;
+    }
+}
+
+/* Para telas menores, faça com que cada card ocupe a largura total da tela */
+@media (max-width: 800px) {
+    .cards-container {
+        flex-direction: column;
+    }
+}
