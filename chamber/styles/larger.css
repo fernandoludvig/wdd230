@@ -1,8 +1,7 @@
-/* Larger Views ******************************/
+/* Larger Views */
 @media (min-width: 640px) {
 	nav ul {
 		display: flex;
-
 	}
 	nav ul li {
 		flex: 1 1 100%;
@@ -25,9 +24,25 @@
     }
 }
 
-/* Para telas menores, faça com que cada card ocupe a largura total da tela */
+/* For smaller screens, ensure everything stays within the header */
+header {
+    padding: 10px; /* Reduce padding to conserve space on smaller screens */
+    height: auto; /* Allow header height to adjust based on content */
+}
+
+header h1 {
+    margin-bottom: 10px; /* Reduce margin to conserve space */
+}
+
+button {
+    padding: 8px 16px; /* Reduce padding for the button */
+    font-size: 0.9rem; /* Decrease font size for better fit */
+}
+
+/* Adjust card layout for smaller screens */
 @media (max-width: 800px) {
     .cards-container {
-        flex-direction: column;
+        flex-direction: column; /* Stack cards vertically */
+        align-items: center; /* Center cards horizontally */
     }
 }
