@@ -6,9 +6,9 @@
 header {
     background-color: #3B6E98;
     display: flex;
-    flex-direction: column;  /* Mudança para organizar os filhos em coluna */
-    align-items: center;     /* Centraliza horizontalmente os filhos */
-    justify-content: center; /* Centraliza verticalmente os filhos */
+    flex-direction: column;  
+    align-items: center;     
+    justify-content: center; 
     padding: 20px;
     border: 1px solid rgba(0, 0, 0, 0.1);
     font-family: 'Poppins', sans-serif;
@@ -21,7 +21,7 @@ header {
 header h1 {
     font-family: 'Montserrat', sans-serif;
     color: white;
-    margin-bottom: 20px; /* Espaço entre o h1 e o botão */
+    margin-bottom: 20px; 
 }
 
 button {
@@ -109,11 +109,11 @@ main {
     display: flex;
     justify-content: space-between;
     padding: 20px;
-    gap: 20px; /* Adiciona espaço entre os cards */
+    gap: 20px; 
 }
 
 .card {
-    flex: 1; /* Faz com que cada card cresça igualmente para preencher o espaço disponível */
+    flex: 1; 
     padding: 20px;
     border: 1px solid #ccc;
     border-radius: 8px;
@@ -139,20 +139,18 @@ main {
 
 .text-info {
     text-align: center;
-    margin-right: 20px; /* Espaço entre o texto e a imagem */
+    margin-right: 20px; 
 }
 
 #weather-icon {
-    width: 50px; /* Adjust according to your layout */
-    height: 50px; /* Adjust according to your layout */
-    /* Add any additional styles as needed */
+    width: 50px; 
+    height: 50px; 
 }
-
 
 #spotlights {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Grid responsivo com largura mínima de 300px */
-    gap: 20px; /* Espaçamento entre os cartões */
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
+    gap: 20px; 
 }
 
 .spotlight {
@@ -190,7 +188,6 @@ main {
     background-color: #080809;
 }
 
-
 footer {
     background-color: #3B6E98;
     display: flex;
@@ -208,5 +205,5 @@ footer {
 
 footer p {
     margin-top: 5px;
-    color: #fffafa; /* Adjust the text color for better contrast */
+    color: #fffafa; 
 }
