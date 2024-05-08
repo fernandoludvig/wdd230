@@ -45,3 +45,5 @@ document.addEventListener("DOMContentLoaded", function() {
 
  // Display the counter value in the information card
  document.getElementById('visitCounter').textContent = `Visit Count: ${counter}`;
+
+
