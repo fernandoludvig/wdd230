@@ -27,7 +27,7 @@
 </head>
 <body>
     <header>
-        <img src="images/eu.png" alt="Profile Picture">
+        <img src="images/eu1.webp" alt="Profile Picture" loading="lazy">
         <span>Fernando Ludvig</span>
         <img class="dark" src="images/dark-theme-svgrepo-com.png" alt="dark mode" id="darkBtn"> <!-- Dark mode toggle button -->
 
@@ -43,6 +43,13 @@
     </nav>
 
     <main>
+        <div class="hero">
+            <picture>
+                <source srcset="images/hero-small3.webp" media="(max-width: 500px)">
+                <source srcset="images/hero-medium2.webp" media="(max-width: 1000px)">
+                <img src="images/hero-large1.webp" alt="Image from Belo Horizonte Temple" loading="lazy" width="500" height="250">
+            </picture>
+        </div>
         <h1>WDD 230: Web Frontend Development</h1>
         <hr>
         <div class="cards"> <!-- Changed main to div -->
@@ -51,7 +58,7 @@
                 <ul> <!-- Added missing <ul> -->
                     <li>Week 01:<a href="#"></a></li>
                     <li>Week 02:<a href="#"></a></li>
-                    <li>Week 03:<a href="week03/images/landscape.webp">WebP</a>
+                    <li>Week 03:<a href="week03/images/landscape.webp">WebP |</a><a href="https://byui-cse.github.io/wdd230-ww-course/week03/prepare-lazyload.html"> Lazy |</a><a href="https://byui-cse.github.io/wdd230-ww-course/week03/prepare-localStorage.html"> localStorage</a>
                     <li>Week 04:<a href="#"></a></li>
                     <li>Week 05:<a href="#"></a></li>
                     <li>Week 06:<a href="#"></a></li>
@@ -61,11 +68,13 @@
                 <h2 class="head">Information</h2>
                 <p>Florianópolis, Brazil</p>
                 <p>69°F - Sunshine</p>
-                <p></p>
+                <p id="visitCounter"></p>
             </section>
         </div>
+        <div class="map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d56576.04340854439!2d-48.69376505136724!3d-27.593445499999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x952749bb3d3415fb%3A0x468c946b1e7294b6!2sA%20Igreja%20de%20Jesus%20Cristo%20dos%20Santos%20dos%20%C3%9Altimos%20Dias!5e0!3m2!1spt-BR!2sbr!4v1715172504877!5m2!1spt-BR!2sbr"  style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
     </main>
-    
     <footer>
         <p id="copyright"></p>
         <p>The document was last modified on <span id="lastModified"></span>.</p>

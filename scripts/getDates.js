@@ -32,3 +32,16 @@ document.addEventListener("DOMContentLoaded", function() {
         main.classList.toggle('dark');
     });
 });
+
+
+ // Retrieve the counter value from localStorage or set it to 0
+ let counter = parseInt(localStorage.getItem('pageVisits')) || 0;
+
+ // Increment the counter each time the page is visited
+ counter++;
+ 
+ // Store the updated counter value in localStorage
+ localStorage.setItem('pageVisits', counter);
+
+ // Display the counter value in the information card
+ document.getElementById('visitCounter').textContent = `Visit Count: ${counter}`;

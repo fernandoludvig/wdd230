@@ -131,6 +131,17 @@ main {
     padding: 20px;
 }
 
+/* Image */
+.hero picture {
+    width: 100%;
+    height: auto;
+}
+.hero img {
+    width: 100%;
+    height: auto;
+}
+
+
 /* Cards */
 .cards {
     display: flex;
@@ -138,8 +149,8 @@ main {
 }
 
 h1 {
-    font-weight: 800;
-    font-size: 1.5rem;
+    font-weight: 500;
+    margin-top: 20px;
 }
 
 .head {
@@ -155,7 +166,10 @@ h1 {
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     width: 100%;  /* Each card takes full width */
+    margin-top: 10px;
+    margin-left: 10px;
 }
+
 
 li {
     font-family: "Poppins", sans-serif;
@@ -176,6 +190,19 @@ li {
     font-family: "Poppins", sans-serif;
 }
 
+/* Map */
+.map {
+    margin: 20px auto; /* Adjust margins as needed */
+    max-width: 100%; /* Ensure the map doesn't overflow its container */
+}
+
+.map iframe {
+    width: 100%; /* Make the map iframe fill its container */
+    height: 400px; /* Set a fixed height or adjust as needed */
+    border: none; /* Remove iframe border */
+}
+
+
 /* Footer */
 footer {
     background-color: #3B6E98;
@@ -195,3 +222,5 @@ footer p {
     margin-top: 5px;
     color: #eee;
 }
+
+
