@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Floripa Chamber of Commerce</title>
+    <link rel="icon" type="image/x-icon" href="images/chamber.ico">
+    <meta name="description" content="Chamber Project">
+    <meta name="author" content="Fernando Ludvig">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" as="style">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+
+    <link rel="preload" href="styles/base.css" as="style">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="preload" href="styles/larger.css" as="style">
+    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" as="style">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+</head>
+<body>
+    <header>
+        <h1>Floripa Chamber of Commerce</h1>
+        <button onclick="location.href='#membership'">Join Chamber</button>
+    </header>
+    <button id="menu" class="menu-button" aria-label="Toggle navigation">&#9776;</button>
+    <nav>
+        <ul class="navigation">
+            <li><a href="#">About</a></li>
+            <li><a href="#">News</a></li>
+            <li><a href="#">Membership</a></li>
+            <li><a href="#">Events</a></li>
+            <li><a href="#">Resources</a></li>
+        </ul>
+    </nav>
+    <main class="discover">
+        <div class="sidebar">
+            <p><span id="lastVisit"></span></p>
+            <div class="sidebar-item">
+                <h2>Local Demographics</h2>
+                <p>Population: 537,211</p>
+                <p>Median Income: $8,000</p>
+                <p>Area: 674,844 km²</p>
+                <p>Average Age: 60 years</p>
+            </div>
+            <div class="sidebar-item">
+                <h2>Upcoming Events</h2>
+                <ul>
+                    <li>Art Fair - June 12, 2024</li>
+                    <li>Business Expo - July 9, 2024</li>
+                    <li>Music Festival - August 15, 2024</li>
+                    <li>Food Market - September 20, 2024</li>
+                </ul>
+            </div>
+        </div>
+        <div class="content-area">
+            <h2>Welcome to the Discover Page!</h2>
+            <p>Explore what makes our community unique through local photos of interest.</p>
+            <div class="photo-gallery">
+                <figure>
+                    <img src="images/floripa11.webp" alt="Description of photo 1" width="500" height="300" loading="lazy"> 
+                    <figcaption>Caption for photo 1</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/floripa21.webp" alt="Description of photo 2" width="500" height="300" loading="lazy">
+                    <figcaption>Caption for photo 2</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/floripa3.webp" alt="Description of photo 3" width="500" height="300" loading="lazy">
+                    <figcaption>Caption for photo 3</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/floripa4(1).webp" alt="Description of photo 4" width="500" height="300" loading="lazy">
+                    <figcaption>Caption for photo 4</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/floripa5(1).webp" alt="Description of photo 5" width="500" height="300" loading="lazy">
+                    <figcaption>Caption for photo 5</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/floripa6.webp" alt="Description of photo 6" width="500" height="300" loading="lazy">
+                    <figcaption>Caption for photo 6</figcaption>
+                </figure>
+            </div>
+        </div>
+            
+    </main>
+    <footer>
+        <p id="copyright"></p>
+        <p>The document was last modified on <span id="lastModified"></span>.</p>
+    </footer>
+
+    <!-- Include the JavaScript file at the end of the body -->
+    <script src="scripts/chamber.js"></script>
+</body>
+</html>

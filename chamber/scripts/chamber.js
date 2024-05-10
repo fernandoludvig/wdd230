@@ -51,3 +51,40 @@ document.addEventListener('DOMContentLoaded', function () {
             });
     });
 });
+
+
+document.addEventListener("DOMContentLoaded", function() {
+    // Get the current date
+    var currentDate = new Date();
+
+    // Get the last visit date from localStorage
+    var lastVisit = localStorage.getItem("lastVisit");
+
+    if (lastVisit) {
+        // Calculate the time difference in milliseconds
+        var timeDifference = currentDate - new Date(lastVisit);
+        // Convert milliseconds to days
+        var daysDifference = Math.floor(timeDifference / (1000 * 60 * 60 * 24));
+
+        // Display appropriate message based on time difference
+        var message = "";
+        if (daysDifference === 0) {
+            message = "Back so soon! Awesome!";
+        } else if (daysDifference === 1) {
+            message = "You last visited 1 day ago.";
+        } else {
+            message = "You last visited " + daysDifference + " days ago.";
+        }
+    } else {
+        // If it's the first visit, display welcome message
+        message = "Welcome! Let us know if you have any questions.";
+    }
+
+    // Display the message in the sidebar
+    var lastVisitElement = document.getElementById("lastVisit");
+    lastVisitElement.textContent = message;
+
+    // Store the current visit date in localStorage
+    localStorage.setItem("lastVisit", currentDate);
+});
+

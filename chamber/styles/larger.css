@@ -46,3 +46,31 @@ button {
         align-items: center; /* Center cards horizontally */
     }
 }
+
+/* DISCOVER PAGE */
+/* Responsive layout for mobile */
+@media (max-width: 768px) {
+    .discover {
+        grid-template-columns: 1fr;
+    }
+
+    .sidebar,
+    .content-area {
+        grid-column: 1 / 2;
+    }
+}
+
+/* Responsive layout adjustments */
+@media (max-width: 768px) {
+    .photo-gallery {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (min-width: 768px) {
+    .photo-gallery figure:hover img {
+        transform: scale(1.1); /* Example: Increase the size of the image */
+        transition: transform 0.2s ease; /* Add a smooth transition effect */
+    }
+}
+
