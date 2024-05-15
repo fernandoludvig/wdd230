@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fernando Ludvig - WDD 230 - Web Frontend Development</title>
+    <link rel="icon" type="image/x-icon" href="images/favicon.png">
+    <meta name="description" content="WDD 230 - Web Frontend Development">
+    <meta name="author" content="Fernando Ludvig">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="stylesheet" href="styles/form.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+
+
+    <!-- Updated Open Graph meta tags -->
+    <meta property="og:image" content="https://opengraph.githubassets.com/984ac90c6295c6e15acff77fcfadca614bcda153f612929d3005ffeaf6b2f3f7/fernandoludvig/wdd230">
+    <meta property="og:image:alt" content="Contribute to fernandoludvig/wdd230 development by creating an account on GitHub.">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="600">
+    <meta property="og:site_name" content="GitHub">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="fernandoludvig/wdd230">
+    <meta property="og:url" content="https://github.com/fernandoludvig/wdd230">
+</head>
+<body>
+    <header>
+        <img src="images/eu1.webp" alt="Profile Picture" loading="lazy">
+        <span>Fernando Ludvig</span>
+        <img class="dark" src="images/dark-theme-svgrepo-com.png" alt="dark mode" id="darkBtn"> <!-- Dark mode toggle button -->
+
+    </header>
+    <a id="menu" href="#">&#9776;</a> <!-- Changed to use the menu icon -->
+    <nav>
+        <ul class="navigation">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Chamber</a></li>
+            <li><a href="#">Site Plan</a></li>
+            <li><a href="#">Form</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <form action="record.html" method="get">
+
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required pattern="[a-zA-Z0-9]{8,}" title="Password must be at least 8 characters long and can only be alphanumeric">
+
+            <label for="confirm_password">Confirm Password:</label>
+            <input type="password" id="confirm_password" name="confirm_password" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required pattern="[a-zA-Z0-9._%+\-]+@byui\.edu$" title="Please enter a valid email address from byui.edu domain">
+
+            <label for="page_rating">Page Rating:</label>
+            <input type="range" id="page_rating" name="page_rating" min="1" max="10" step="1" onchange="document.getElementById('rating_value').innerText = this.value">
+            <span id="rating_value">5</span>
+
+            <button type="submit">Submit</button>
+        </form>
+    </main>
+    <footer>
+        <p id="copyright"></p>
+        <p>The document was last modified on <span id="lastModified"></span>.</p>
+    </footer>
+    <script src="scripts/getDates.js"></script>
+</body>
+</html>

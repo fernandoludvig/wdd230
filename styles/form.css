@@ -1,0 +1,62 @@
+:root {
+    --primary-color: #007bff; /* Primary color for buttons and highlights */
+    --input-padding: 10px; /* Padding for input fields */
+    --form-max-width: 400px; /* Maximum width for the form */
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+form {
+    margin: 20px auto;
+    max-width: var(--form-max-width);
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+    margin-top: 5px;
+}
+
+input, select {
+    width: calc(100% - 20px); /* Adjusting for input padding */
+    padding: var(--input-padding);
+    margin-bottom: 15px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: var(--primary-color);
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+#rating_value {
+    font-weight: bold;
+    margin-left: 5px;
+}
+
+@media screen and (max-width: 600px) {
+    /* Adjustments for smaller screens */
+    form {
+        padding: 10px;
+    }
+}
