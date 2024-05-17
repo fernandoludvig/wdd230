@@ -302,3 +302,136 @@ iframe {
      #f0f0f0;
 }
 
+
+/* FORM PAGE */
+
+        /* Form Specific Styles */
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+form {
+    flex: 1;
+    min-width: 300px;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+textarea {
+    height: 100px;
+}
+
+.submit-btn {
+    text-align: center;
+}
+
+.membership-benefits {
+    flex: 1;
+    margin-left: 20px;
+    min-width: 200px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.membership-benefits h2 {
+    margin-bottom: 10px;
+    text-align: center;
+    color: #333;
+    font-size: 24px;
+}
+
+.membership-benefits ul {
+    list-style: none;
+    padding: 0;
+}
+
+.membership-benefits ul li {
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.membership-benefits ul li strong {
+    color: #555;
+}
+
+.membership-comparison {
+    margin-top: 20px;
+}
+
+.membership-comparison h3 {
+    text-align: center;
+    color: #444;
+    margin-bottom: 10px;
+}
+
+.membership-comparison table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.membership-comparison th,
+.membership-comparison td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+}
+
+.membership-comparison th {
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+.contact-info {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.contact-info h3 {
+    margin-bottom: 10px;
+    color: #444;
+}
+
+.contact-info p {
+    color: #555;
+}
+
+.contact-info a {
+    color: #0066cc;
+    text-decoration: none;
+}
+
+.contact-info a:hover {
+    text-decoration: underline;
+}
+
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .membership-benefits {
+        margin-left: 0;
+        margin-top: 20px;
+    }
+}
