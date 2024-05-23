@@ -22,6 +22,36 @@ hambutton.addEventListener('click', () => {
 });
 
 
+window.addEventListener('load', function () {
+    const apiKey = '09f41b3700b1f5ec16123b2e3e4bddb6'; // Replace with your OpenWeatherMap API key
+    const city = 'Florianopolis';
+    const url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
+
+    fetch(url)
+        .then(response => {
+            if (!response.ok) {
+                throw new Error('Network response was not ok');
+            }
+            return response.json();
+        })
+        .then(data => {
+            const temperature = data.main.temp;
+            const weatherDescription = data.weather[0].description;
+            const weatherIcon = data.weather[0].icon;
+
+            document.getElementById('temperature').textContent = `${temperature}° C`;
+            document.getElementById('weather-description').textContent = weatherDescription.charAt(0).toUpperCase() + weatherDescription.slice(1);
+
+            const weatherIconUrl = `https://openweathermap.org/img/wn/${weatherIcon}.png`;
+            document.getElementById('weather-icon').setAttribute('src', weatherIconUrl);
+            document.getElementById('weather-icon').setAttribute('alt', weatherDescription);
+        })
+        .catch(error => {
+            console.error('Failed to fetch weather data:', error);
+            document.getElementById('temperature').textContent = 'Temperature data unavailable';
+            document.getElementById('weather-description').textContent = 'Weather condition data unavailable';
+        });
+});
 
 
 document.addEventListener("DOMContentLoaded", function() {
@@ -46,4 +76,4 @@ document.addEventListener("DOMContentLoaded", function() {
  // Display the counter value in the information card
  document.getElementById('visitCounter').textContent = `Visit Count: ${counter}`;
 
-
+ 

@@ -142,10 +142,34 @@ main {
 }
 
 
+  .weather-info {
+    display: flex;
+    align-items: center; /* Align items vertically in the center */
+    justify-content: center; /* Center horizontally */
+  }
+  img {
+    width: 50px;
+    height: auto;
+    margin-right: 10px; /* Space between the icon and text */
+  }
+  .text-info {
+    margin-top: 10px; /* Space above the text info for better spacing */
+  }
+
 /* Cards */
 .cards {
     display: flex;
     flex-direction: column;
+}
+
+#temp-and-icon {
+    display: flex;      /* Enables Flexbox */
+    align-items: center; /* Centers items vertically within the container */
+    gap: 10px;          /* Optional: adds space between the text and the icon */
+}
+
+#temperature {
+    margin: 0; /* Removes default paragraph margins for better alignment */
 }
 
 h1 {

@@ -1,0 +1,70 @@
+{
+    "weeks": [
+      {
+        "week": "Week 1",
+        "links": [
+          {
+            "url": "week01/holygrail.html",
+            "title": "HG Layout"
+          },
+          {
+            "url": "https://byui-cse.github.io/wdd230-ww-course/week01/prepare-media-queries.html",
+            "title": "mQueries"
+          }
+        ]
+      },
+      {
+        "week": "Week 2",
+        "links": [
+          {
+            "url": "week02/flexbox.html",
+            "title": "Flexbox Fun"
+          },
+          {
+            "url": "week02/grid-layout.html",
+            "title": "CSS Grid"
+          }
+        ]
+      },
+      {
+        "week": "Week 3",
+        "links": [
+          {
+            "url": "week03/sass-basics.html",
+            "title": "Intro to SASS"
+          },
+          {
+            "url": "week03/responsive-design.html",
+            "title": "Responsive Design"
+          }
+        ]
+      },
+      {
+        "week": "Week 4",
+        "links": [
+          {
+            "url": "week04/typography.html",
+            "title": "Web Typography"
+          },
+          {
+            "url": "week04/colors.html",
+            "title": "Colors in Design"
+          }
+        ]
+      },
+      {
+        "week": "Week 5",
+        "links": [
+          {
+            "url": "week05/animation.html",
+            "title": "CSS Animations"
+          },
+          {
+            "url": "week05/performance-optimization.html",
+            "title": "Performance Optimization"
+          }
+        ]
+      }
+    ]
+  }
+  
