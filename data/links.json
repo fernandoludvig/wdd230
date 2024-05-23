@@ -4,7 +4,7 @@
         "week": "Week 1",
         "links": [
           {
-            "url": "chamber-site-plan.html",
+            "url": "week1/chamber-site-plan.html",
             "title": "Chamber Plan"
           },
           {
@@ -17,7 +17,7 @@
         "week": "Week 2",
         "links": [
           {
-            "url": "design.html",
+            "url": "week02/design.html",
             "title": "Web Design"
           },
           {
@@ -30,11 +30,11 @@
         "week": "Week 3",
         "links": [
           {
-            "url": "lazyload.html",
+            "url": "week03/lazyload.html",
             "title": "Lazy Load"
           },
           {
-            "url": "responsive-images.html",
+            "url": "week03/responsive-images.html",
             "title": "Responsive Images"
           }
         ]
@@ -47,7 +47,7 @@
             "title": "Pseudo Classes"
           },
           {
-            "url": "tablebuild.html",
+            "url": "week04/tablebuild.html",
             "title": "Forms"
           }
         ]
