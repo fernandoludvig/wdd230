@@ -4,11 +4,11 @@
         "week": "Week 1",
         "links": [
           {
-            "url": "https://byui-cse.github.io/wdd230-ww-course/week01/prepare-holygrail-layout.html",
+            "url": "week01/prepare-holygrail-layout.html",
             "title": "HG Layout"
           },
           {
-            "url": "https://byui-cse.github.io/wdd230-ww-course/week01/prepare-media-queries.html",
+            "url": "week01/prepare-media-queries.html",
             "title": "mQueries"
           }
         ]
@@ -17,12 +17,12 @@
         "week": "Week 2",
         "links": [
           {
-            "url": "week02/flexbox.html",
-            "title": "Flexbox Fun"
+            "url": "week02/prepare-design-principles.html",
+            "title": "Web Design"
           },
           {
-            "url": "week02/grid-layout.html",
-            "title": "CSS Grid"
+            "url": "week02/prepare-dom-manipulation.html",
+            "title": "Dom"
           }
         ]
       },
@@ -30,11 +30,11 @@
         "week": "Week 3",
         "links": [
           {
-            "url": "week03/sass-basics.html",
-            "title": "Intro to SASS"
+            "url": "week03/prepare-webp.html",
+            "title": "Webp Images"
           },
           {
-            "url": "week03/responsive-design.html",
+            "url": "week03/prepare-responsive-images.html",
             "title": "Responsive Design"
           }
         ]
@@ -43,12 +43,12 @@
         "week": "Week 4",
         "links": [
           {
-            "url": "week04/typography.html",
-            "title": "Web Typography"
+            "url": "week04/prepare-pseudo-classes.html",
+            "title": "Pseudo Classes"
           },
           {
-            "url": "week04/colors.html",
-            "title": "Colors in Design"
+            "url": "week04/prepare-forms.html",
+            "title": "Forms"
           }
         ]
       },
@@ -56,12 +56,12 @@
         "week": "Week 5",
         "links": [
           {
-            "url": "week05/animation.html",
-            "title": "CSS Animations"
+            "url": "week05/prepare-json.html",
+            "title": "Json"
           },
           {
-            "url": "week05/performance-optimization.html",
-            "title": "Performance Optimization"
+            "url": "week05/prepare-fetch.html",
+            "title": "Api"
           }
         ]
       }
