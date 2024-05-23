@@ -4,8 +4,8 @@
         "week": "Week 1",
         "links": [
           {
-            "url": "week01/prepare-holygrail-layout.html",
-            "title": "HG Layout"
+            "url": "chamber-site-plan.html",
+            "title": "Chamber Plan"
           },
           {
             "url": "week01/prepare-media-queries.html",
@@ -17,7 +17,7 @@
         "week": "Week 2",
         "links": [
           {
-            "url": "week02/prepare-design-principles.html",
+            "url": "design.html",
             "title": "Web Design"
           },
           {
@@ -30,12 +30,12 @@
         "week": "Week 3",
         "links": [
           {
-            "url": "week03/prepare-webp.html",
-            "title": "Webp Images"
+            "url": "lazyload.html",
+            "title": "Lazy Load"
           },
           {
-            "url": "week03/prepare-responsive-images.html",
-            "title": "Responsive Design"
+            "url": "responsive-images.html",
+            "title": "Responsive Images"
           }
         ]
       },
@@ -47,7 +47,7 @@
             "title": "Pseudo Classes"
           },
           {
-            "url": "week04/prepare-forms.html",
+            "url": "tablebuild.html",
             "title": "Forms"
           }
         ]

@@ -1,5 +1,5 @@
 // JavaScript code to fetch JSON data and populate the learning activities section
-const baseURL = "https://byui-cse.github.io/wdd230-ww-course/";
+const baseURL = "https://fernandoludvig.github.io/wdd230/";
 const linksURL = baseURL + "data/links.json";
 
 function displayLinks(data) {
@@ -22,7 +22,7 @@ function displayLinks(data) {
         
         week.links.forEach((link, index) => {
             const anchor = document.createElement('a');
-            anchor.href = link.url;
+            anchor.href = baseURL + link.url;
             anchor.textContent = link.title;
             weekElement.appendChild(anchor);
 
