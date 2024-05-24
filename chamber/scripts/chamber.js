@@ -88,3 +88,45 @@ document.addEventListener("DOMContentLoaded", function() {
     localStorage.setItem("lastVisit", currentDate);
 });
 
+// script.js
+
+document.addEventListener('DOMContentLoaded', () => {
+    fetch('data/members.json')
+        .then(response => response.json())
+        .then(data => renderMembers(data))
+        .catch(error => console.error('Error fetching the members data:', error));
+});
+
+const gridButton = document.getElementById('grid');
+const listButton = document.getElementById('list');
+const memberContainer = document.getElementById('memberContainer');
+
+gridButton.addEventListener('click', () => toggleView('grid'));
+listButton.addEventListener('click', () => toggleView('list'));
+
+function renderMembers(members) {
+    memberContainer.innerHTML = '';
+    members.forEach(member => {
+        const memberElement = document.createElement('section');
+        memberElement.innerHTML = `
+            <img src="images/${member.image}" alt="${member.name}">
+            <h3>${member.name}</h3>
+            <p>${member.address}</p>
+            <p>${member.phone}</p>
+            <p><a href="${member.website}" target="_blank">${member.website}</a></p>
+            <p>Membership Level: ${member.membership_level}</p>
+            <p>${member.description}</p>
+        `;
+        memberContainer.appendChild(memberElement);
+    });
+}
+
+function toggleView(view) {
+    if (view === 'grid') {
+        memberContainer.classList.add('grid');
+        memberContainer.classList.remove('list');
+    } else {
+        memberContainer.classList.add('list');
+        memberContainer.classList.remove('grid');
+    }
+}

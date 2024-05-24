@@ -1,0 +1,38 @@
+[
+    {
+        "name": "Company A",
+        "address": "123 Main St, Cityville, ST 12345",
+        "phone": "123-456-7890",
+        "website": "http://www.companya.com",
+        "image": "companyA.jpg",
+        "membership_level": "Gold",
+        "description": "Leading provider of tech solutions."
+    },
+    {
+        "name": "Company B",
+        "address": "456 Elm St, Townsville, ST 67890",
+        "phone": "234-567-8901",
+        "website": "http://www.companyb.com",
+        "image": "companyB.jpg",
+        "membership_level": "Silver",
+        "description": "Innovative solutions for modern businesses."
+    },
+    {
+        "name": "Company C",
+        "address": "789 Oak St, Villagetown, ST 13579",
+        "phone": "345-678-9012",
+        "website": "http://www.companyc.com",
+        "image": "companyC.jpg",
+        "membership_level": "Bronze",
+        "description": "Expert in marketing and advertising."
+    },
+    {
+        "name": "Company D",
+        "address": "101 Pine St, Hamletville, ST 24680",
+        "phone": "456-789-0123",
+        "website": "http://www.companyd.com",
+        "image": "companyD.jpg",
+        "membership_level": "Gold",
+        "description": "Leader in sustainable energy solutions."
+    }
+]
