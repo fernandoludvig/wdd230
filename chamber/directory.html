@@ -10,9 +10,12 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles/base.css">
-    <link rel="stylesheet" href="styles/larger.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="styles/base.css" media="print" onload="this.media='all'">
+    <noscript><link rel="stylesheet" href="styles/base.css"></noscript>
+    <link rel="stylesheet" href="styles/larger.css" media="print" onload="this.media='all'">
+    <noscript><link rel="stylesheet" href="styles/larger.css"></noscript>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" media="print" onload="this.media='all'">
+    <noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"></noscript>
     <meta property="og:image" content="https://opengraph.githubassets.com/984ac90c6295c6e15acff77fcfadca614bcda153f612929d3005ffeaf6b2f3f7/fernandoludvig/wdd230">
     <meta property="og:site_name" content="GitHub">
     <meta property="og:type" content="website">
@@ -24,7 +27,7 @@
         <h1>Floripa Chamber of Commerce</h1>
         <button onclick="location.href='#membership'">Join Chamber</button>
     </header>
-    <a id="menu" href="#">&#9776;</a> <!-- Changed to use the menu icon -->
+    <a id="menu" href="#">&#9776;</a>
     <nav>
         <ul class="navigation">
             <li><a href="#">About</a></li>
@@ -34,7 +37,7 @@
             <li><a href="#">Resources</a></li>
         </ul>
     </nav>
-    <main>
+    <main class="main">
         <div class="menu">
             <button id="grid">⏹️ Grid</button>
             <button id="list">📄 List</button>
@@ -44,7 +47,6 @@
             <h2>Member Directory</h2>
             <!-- Member data will be injected here by JavaScript -->
         </article>
-        <script src="scripts/chamber.js"></script>
     </main>
     <footer>
         <p id="copyright"></p>
@@ -52,6 +54,6 @@
     </footer>
 
     <!-- Include the JavaScript file at the end of the body -->
-    <script src="scripts/chamber.js"></script>
+    <script src="scripts/chamber.js" defer></script>
 </body>
 </html>

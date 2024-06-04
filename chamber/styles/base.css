@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&family=Open+Sans:wght@300..800&display=swap');
+
 * {
 	margin: 0;
 	padding: 0;
@@ -429,7 +431,7 @@ textarea {
     box-sizing: border-box;
 }
 
-main {
+.main {
     margin: 0 auto;
     padding: 0.5rem;
     max-width: 700px;
