@@ -1,35 +1,100 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Thank You</title>
+    <link rel="icon" type="image/x-icon" href="images/chamber.ico">
+    <meta name="description" content="Chamber Project">
+    <meta name="author" content="Fernando Ludvig">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&family=Open+Sans:wght@300..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <meta property="og:image" content="https://opengraph.githubassets.com/984ac90c6295c6e15acff77fcfadca614bcda153f612929d3005ffeaf6b2f3f7/fernandoludvig/wdd230">
+    <meta property="og:site_name" content="GitHub">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="fernandoludvig/wdd230">
+    <meta property="og:url" content="https://github.com/fernandoludvig/wdd230">
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
+        * {
             margin: 0;
-            background-color: #f9f9f9;
-            text-align: center;
+            padding: 0;
+            box-sizing: border-box;
         }
+
+        html, body {
+            height: 100%;
+            margin: 0;
+        }
+
+        body {
+            font-family: 'Montserrat', sans-serif;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .content {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            background-color: #f9f9f9;
+        }
+
         .thank-you {
             max-width: 500px;
             padding: 20px;
             background-color: white;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
             border-radius: 8px;
+            text-align: center;
+        }
+
+        .thank-you h1 {
+            margin-bottom: 20px;
+        }
+
+        footer {
+            background-color: #3B6E98;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 60px;
+            border: 1px solid rgba(0, 0, 0, 0.1);
+            font-family: "Poppins", sans-serif;
+            font-weight: 700;
+            font-size: 25px;
+            color: #fffafa;
+            width: 100%;
+        }
+
+        footer p {
+            margin-top: 5px;
         }
     </style>
 </head>
+
 <body>
+    <div class="content">
+        <div class="thank-you">
+            <h1>Thank You!</h1>
+            <p>Thank you for filling out the membership application form. We will review your application and get back to you soon.</p>
+        </div>
+    </div>
 
-<div class="thank-you">
-    <h1>Thank You!</h1>
-    <p>Thank you for filling out the membership application form. We will review your application and get back to you soon.</p>
-</div>
+    <footer>
+        <p id="copyright"></p>
+        <p>The document was last modified on <span id="lastModified"></span>.</p>
+    </footer>
 
+    <!-- Include the JavaScript file at the end of the body -->
+    <script src="scripts/chamber.js"></script>
 </body>
+
 </html>
